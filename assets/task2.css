@@ -1,0 +1,72 @@
+.main-div{
+width: 1200px;
+height: 748px;
+gap: 0px;
+opacity: 0px;
+}
+.headline{
+    width: Fixed (1,200px)px;
+height: Hug (600px)px;
+top: 148px;
+gap: 0px;
+opacity: 0px;
+}
+.tab{
+    width: Fixed (1,200px)px;
+height: Hug (46px)px;
+top: 70px;
+padding: 0px 299.87px 0px 299.86px;
+gap: 0px;
+opacity: 0px;
+}
+.customDetail{
+display: flex;
+width: Fixed (1,200px)px;
+height: Hug (600px)px;
+top: 148px;
+gap: 0px;
+opacity: 0px;
+}
+.customImage{
+width: 600px;
+height: 600px;
+gap: 0px;
+opacity: 0px;
+}
+.imageDetails{
+    width: Fixed (600px)px;
+height: Hug (600px)px;
+padding: 20px 0px 111px 60px;
+gap: 0px;
+opacity: 0px;
+}
+.innerImageDetails{
+    width: 540px;
+height: 469px;
+gap: 0px;
+opacity: 0px;
+}
+.detailedHeadline{
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    
+}
+.ratings{
+    width: Fixed (82px)px;
+height: Fixed (14px)px;
+top: 139px;
+padding: 0.02px 1.24px 2.21px 0.33px;
+gap: 4.6px;
+opacity: 0px;
+}
+/* .content{
+    width: Fixed (540px)px;
+height: Hug (89px)px;
+top: 167px;
+padding: 0px 10px 1px 0px;
+gap: 0px;
+opacity: 0px;
+} */

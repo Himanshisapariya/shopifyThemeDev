@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "main": {
+      "type": "tailwindcssdesign",
+      "settings": {
+        "menu": "shopify:\/\/shop_images\/menu.png",
+        "heroimage": "shopify:\/\/shop_images\/hero.jpg",
+        "headerimage": "shopify:\/\/shop_images\/logo_932bf723-8350-4c12-9bfb-e5f33190194c.png",
+        "enquiry": "shopify:\/\/shop_images\/enquiry.png",
+        "sec2_bg1": "shopify:\/\/shop_images\/sec2bg1.png",
+        "sec2_bg2": "shopify:\/\/shop_images\/sec2bg2.png",
+        "explore_our_story": "shopify:\/\/shop_images\/exploreourstory.png",
+        "sec3": "shopify:\/\/shop_images\/section3.jpg",
+        "explorepink": "shopify:\/\/shop_images\/exploreourstory.png",
+        "explore": "shopify:\/\/shop_images\/explore_79509c19-321c-48c1-8f7d-90b7fda473c6.png",
+        "sec4card1": "shopify:\/\/shop_images\/card1.jpg",
+        "sec4card2": "shopify:\/\/shop_images\/card2.jpg",
+        "sec4card3": "shopify:\/\/shop_images\/card3.jpg",
+        "exploree": "shopify:\/\/shop_images\/explore_79509c19-321c-48c1-8f7d-90b7fda473c6.png",
+        "exploregreen": "shopify:\/\/shop_images\/exploregreen.png",
+        "exploreblue": "shopify:\/\/shop_images\/exploreblue.png",
+        "sec7image1": "shopify:\/\/shop_images\/sec72.jpg",
+        "sec7image2": "shopify:\/\/shop_images\/sec73.jpg",
+        "sec7image3": "shopify:\/\/shop_images\/sec74.jpg",
+        "sec5lion": "shopify:\/\/shop_images\/lion.jpg",
+        "sec5explore": "shopify:\/\/shop_images\/explore_79509c19-321c-48c1-8f7d-90b7fda473c6.png",
+        "sec6": "shopify:\/\/shop_images\/section6.jpg",
+        "exploreexpirence": "shopify:\/\/shop_images\/exploreexperience.png",
+        "explorewildhub": "shopify:\/\/shop_images\/explorewildhub.png",
+        "sec8explore": "shopify:\/\/shop_images\/explore_79509c19-321c-48c1-8f7d-90b7fda473c6.png",
+        "sec8image": "shopify:\/\/shop_images\/section8.jpg",
+        "footer": "shopify:\/\/shop_images\/footer.png",
+        "footerlogo": "shopify:\/\/shop_images\/logo.png",
+        "footersignup": "shopify:\/\/shop_images\/signup2.png",
+        "instagram": "shopify:\/\/shop_images\/instagram.png",
+        "facebook": "shopify:\/\/shop_images\/facebook.png",
+        "twitter": "shopify:\/\/shop_images\/twitter.png",
+        "linkedin": "shopify:\/\/shop_images\/linkedin.png",
+        "geek": "shopify:\/\/shop_images\/geek.png"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

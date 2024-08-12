@@ -1,0 +1,553 @@
+{% schema %}
+{
+  "name": "My New Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "select-header-image",
+      "id": "select-header-image"
+    },
+        {
+      "type": "image_picker",
+      "label": "select-card-image",
+      "id": "select-card-image"
+    },
+     {
+      "type": "image_picker",
+      "label": "cards-image",
+      "id": "cards-image1"
+    },
+     {
+      "type": "image_picker",
+      "label": "cards-image",
+      "id": "cards-image2"
+    },
+     {
+      "type": "image_picker",
+      "label": "cards-image",
+      "id": "cards-image3"
+    },
+         {
+      "type": "image_picker",
+      "label": "lion-image",
+      "id": "lion-image"
+    },
+    {
+      "type": "image_picker",
+      "label": "other-image",
+      "id": "other-image"
+    },
+      {
+      "type": "image_picker",
+      "label": "training-image",
+      "id": "training-image"
+    },
+      {
+      "type": "image_picker",
+      "label": "community-image",
+      "id": "community-image"
+    },
+      {
+      "type": "image_picker",
+      "label": "conversion-image",
+      "id": "conversion-image"
+    },
+      {
+      "type": "image_picker",
+      "label": "people-image",
+      "id": "people-image"
+    },
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "New Section"
+    }
+  ]
+}
+{% endschema %}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+      tailwind.config = {
+          theme: {
+              screens: {
+                  sm: "320px",
+                  md: "768px",
+                  lg: "1280px",
+                  xl: "1536px",
+              },
+              extend: {
+                  colors: {
+                      white: "#FFFFFF",
+                  },
+              },
+          },
+      };
+    </script>
+  </head>
+
+  <body class="body bg-[#F8F4F0]">
+    <!-- Headar section -->
+    <header>
+      <section class="topnav p-5 bg-[#F8F4F0]">
+        <nav class="flex justify-between ">
+          <div>
+            <ul class="flex items-center space-x-3 text-[#B7916F] text-xs">
+              <li class="mr-2"><img src="images/lines.png" alt=""></li>
+              <a href="">
+                <li class="sm:hidden md:inline-block">OUR COLLECTION</li>
+              </a>
+              <li class="sm:hidden md:inline-block"><img src="images/nav-vector.svg" alt=""></li>
+              <a href="">
+                <li class="sm:hidden md:inline-block">DESTINATIONS</li>
+              </a>
+              <li class="sm:hidden md:inline-block"><img src="images/nav-vector.svg" alt=""></li>
+              <a href="">
+                <li class="sm:hidden md:inline-block">EXPERIENCES</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="sm:w-[50%] sm:ml-auto">
+            <img src="images/Group 1004.png" alt="enquiry" class="sm:w-[10%] md:w-[30%] sm:ml-auto md:ml-auto ">
+          </div>
+        </nav>
+      </section>
+    </header>
+    <section class="section-header">
+      <div class="relative sm:p-[2px] md:p-5 ">
+        <img src="{{ section.settings.select-header-image | image_url }}" alt="" width="auto" height="auto">
+        <div class="absolute md:mt-[0%] sm:left-[43vw] sm:top-[-25px] sm:max-w-[50px] md:max-w-[115px] md:max-h-[112px] md:left-[47vw] md:top-[-35px]">
+          <img src="images\citw-circle-logo-2.png" alt="" class=" md:w-[70%] md:mt-[15%]">
+        </div>
+        <div class="absolute bottom-0 left-0 p-4 sm:mb-[1rem] md:mb-20  md:px-10 ">
+          <h2 class="text-white text-2xl md:text-4xl lg:text-5xl font-[Iowan Old Style]">Uncover Kenya’s</h2>
+          <h2 class="text-white text-2xl md:text-4xl lg:text-5xl font-[Iowan Old Style]">Utterly Unique Collection</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-1 -->
+
+    <section class="relative section1 md:p-10 sm:p-3">
+      <div class=" md:max-w-[1019px] mx-auto text-center">
+        <h1 class="iowna font-normal sm:text-sm md:text-2xl  text-[#B7916F]">
+          Collection in the Wild is a selection of exclusive, family-owned properties providing opulent safaris in
+          Kenya's Maasai Mara, coupled with an exclusive island retreat in Lamu.
+        </h1>
+        <p class="font-['Outfit'] sm:mb-3 md:mb-5 md:mx-52 mt-5 font-light md:text-base md:leading-5 text-[#4F5052]">
+          Experience a legacy of regenerative tourism and immerse yourself in a success story of inspiring conservation,
+          all while enjoying our warm hospitality.
+        </p>
+        <img src="./images/explore.png" class="mx-auto md:max-w-[142px] sm:max-w-[100px]" alt="">
+      </div>
+      <img
+        src="images\Group (1).png"
+        class="absolute md:max-w-[250px]  md:max-h-[265px]  sm:max-w-[120px] sm:max-h-[90px] lg:max-w-[350px]  lg:max-h-[365px] lg:top-1 sm:bottom-[30%] md:bottom-[30%] z-[-1]"
+        alt=""
+      >
+      <img
+        src="images\Group 1037 (1).png"
+        class="absolute md:max-w-[250px] md:max-h-[260px] sm:max-w-[120px] sm:max-h-[90px] lg:max-w-[350px] lg:max-h-[300px] md:bottom-[30%] sm:right-5 sm:bottom-[30%] md:top-1 z-[-1]"
+        alt=""
+      >
+    </section>
+
+    <!-- section-2 -->
+    <div class="sec-2 mx-10  md:flex-row lg:flex-row flex sm:flex-col">
+      <div class="card bg-white">
+        <div class="image h-full w-full  p-5">
+          <img src="{{ section.settings.select-card-image | image_url }}" alt="" width="auto" height="auto">
+          <div class="con-1 text-center text-xs text-[#4F5052] font-[Outfit] mt-5">
+            <p>COTTAGES | ROOMS</p>
+          </div>
+          <div class="con-2 text-center text-[#92695D] font-[Iowan Old Style] text-3xl mt-1">
+            <h3>House in the Wild</h3>
+          </div>
+          <div class="con-3 text-center text-[#92695D] font-[Outfit] mt-2 text-xs">
+            <h3>warburgia · River · Olerai · Hippo · Marula · kasaru</h3>
+          </div>
+          <div class="con-4 text-[#4F5052] text-xs mt-1 text-center p-5">
+            <p>
+              Discover the heart of our collection, House in the Wild. This boutique lodge invites you to be immersed in
+              luxury amidst a landscape transformed by a pioneering re-wilding project.
+            </p>
+          </div>
+          <div class="con-5 mx-[35%]">
+            <img src="images\Group 1004.jpg" alt="" class="mx-auto">
+          </div>
+        </div>
+      </div>
+
+      <!-- section-3 -->
+      <div class="sec-3 mx-auto my-auto ">
+        <div class="container mx-[5%] py-4 flex items-center w-[90%]">
+          <div class="flex-grow border-t border-[#CBBFB5]"></div>
+          <span class="flex-shrink-0 pl-2 text-[#CBBFB5] text-sm uppercase">Our collection</span>
+        </div>
+        <p class="desc md:text-xl mt-2 text-[#B7916F] font-[Iowan Old Style text-center  text-justify md:mx-10  ">
+          Inspiring spaces, alongside a world-class luxury safari experience with warm-hearted hospitality.
+        </p>
+        <p class="para mt-5 text-center text-justify text-xs md:mx-10 sm:mb-2">
+          We offer a curated selection of distinctive havens that redefine the art of luxury and adventure. Each
+          property is a testament to refined elegance, providing not just accommodations but immersive experiences in
+          the vibrant tapestry of Kenya's landscapes.
+        </p>
+        <div class="img mt-1 mx-10 mt-5">
+          <img src="images\Group 1003 (1).png" alt="" height="43px" width="250px">
+        </div>
+      </div>
+    </div>
+
+    <!-- section-4 -->
+
+    <section class="section4">
+      <!-- card-1 -->
+      <div class="cards grid gap-6 mx-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 mt-10">
+        <div class="card-1 bg-white w-full p-2">
+          <div class="img lg:p-5">
+            <img src="{{ section.settings.cards-image1 | image_url }}" alt="" width="auto" height="auto">
+            <div class="desc text-sm text-[#4F5052] font-[Outfit] text-center md:mt-5">
+              <h5>Exclusive use | SUITES</h5>
+            </div>
+            <div class="desc text-[#2D2C2B] md:text-xl md:w-[max-content] md:mx-auto font-[Iowan Old Style] text-center md:mt-5 font-normal">
+              <h3>The Wild Hill</h3>
+            </div>
+            <div class="desc text-[Outfit] text-[#2D2C2B] text-center md:mt-2 md:text-xs">
+              <h6>KIPELEO</h6>
+            </div>
+            <div class="desc text-sm text-[#4F5052] mx-auto text-center text-[Outfit] md:mt-2 md:text-[10px]">
+              <p>
+                A sanctuary on the re-wilded landscape of Naretoi, The Wild Hill is a haven with captivating views and a
+                story of hope, growth, and progress.
+              </p>
+            </div>
+            <div class="image sm:w-[100px] sm:-[20px] md:w-[142px] md:h-[43px] mx-auto  sm:mt-3 lg:mt-0 ">
+              <img src="Group 1004 (2).png" alt="" class="md:mt-[10%]">
+            </div>
+          </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="card-2 bg-white w-full p-2">
+          <div class="img lg:p-5">
+            <img src="{{ section.settings.cards-image2 | image_url }}" alt="" width="auto" height="auto">
+            <div class="desc text-sm text-[#4F5052] font-[Outfit] text-center md:mt-5">
+              <h5>EXCLUSIVE</h5>
+            </div>
+            <div class="desc text-[#3F5431] md:text-xl font-[Iowan Old Style] text-center md:mt-5 font-normal md:w-[max-content] md:mx-auto">
+              <h3>Wild Villas</h3>
+            </div>
+            <div class="desc text-[Outfit] text-[#3F5431] text-center md:mt-2 md:text-xs">
+              <h6>Amani · Jamani · Olmarei</h6>
+            </div>
+            <div class="desc text-sm text-[#4F5052] mx-auto text-center text-[Outfit] md:mt-2 md:text-[10px]">
+              <p>
+                Indulge in luxury at Wild Villas - exclusive-use private safari homes that offer unique charm, distinct
+                features, and an authentic encounter with the wild.
+              </p>
+            </div>
+            <div class="image sm:w-[100px] sm:-[20px] md:w-[142px] md:h-[43px] mx-auto sm:mt-3 lg:mt-0  ">
+              <img src="images\Group 1004 (3).png" alt="" class="md:mt-[10%]">
+            </div>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="card-3 bg-white w-full p-2">
+          <div class="img lg:p-5">
+            <img src="{{ section.settings.cards-image3| image_url }}" alt="" width="auto" height="auto">
+            <div class="desc text-sm text-[#4F5052] font-[Outfit] text-center md:mt-5">
+              <h5>EXCLUSIVE USE</h5>
+            </div>
+            <div class="desc text-[#077377] md:text-xl md:mx-auto lg:text-3xl font-[Iowan Old Style] text-center md:mt-5 font-normal md:w-[max-content]">
+              <h3>House On The Beach</h3>
+            </div>
+            <div class="desc text-[Outfit] text-[#3F5431] text-center md:mt-2 md:text-xs">
+              <h6>Jahazi · Kuni Jogoo</h6>
+            </div>
+            <div class="desc text-sm text-[#4F5052] mx-auto text-center text-[Outfit] md:mt-2 md:text-[10px]">
+              <p>
+                Indulge in luxury at Wild Villas - exclusive-use private safari homes that offer unique charm, distinct
+                features, and an authentic encounter with the wild.
+              </p>
+            </div>
+            <div class="image sm:w-[100px] sm:-[20px] md:w-[142px] md:h-[43px] mx-auto sm:mt-3 lg:mt-0   ">
+              <img src="images\Group 1004 (4).png" alt="" class="md:mt-[10%]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 -->
+
+    <section class="section5 text-center mt-10 sm:p-3 md:p-10 md:mx-10 bg-[#FFFFFF] justify-center">
+      <div class="headline">
+        <p class="iowan font-normal md:leading-10 sm:leading-5 md:text-3xl sm:text-lg text-[#B7916F] sm:mb-2 md:mb-5 mx-auto">
+          Explore the remote corners and cultures of Kenya
+        </p>
+      </div>
+      <div class="image sm:w-[95vw] sm:h-auto md:w-[100%]  md:h-[100%] lg:w-[100%] lg:h-[90%]  md:h-[666px] relative">
+        <img src="{{ section.settings.lion-image | image_url }}" alt="" width="auto" height="auto">
+        <div class="hr absolute sm:bottom-[265px] md:w-[95%] md:bottom-[595px] flex items-center">
+          <hr color="#FFFFFF" class="md:mr-8 sm:mr-4 sm:w-[58vw] md:w-[73vw]">
+          <p class="font-['Outfit'] md:font-normal sm:text-xs  text-[#FFFFFF]">OUR DESTINATIONS</p>
+        </div>
+        <div class="content sm:max-w-[50%] absolute sm:left-[39vw] sm:bottom-[6px] md:bottom-[65px] text-left lg:left-[650px] md:max-w-[500px]">
+          <p class="font-['Outfit'] font-normal sm:text-[5px] md:text-xs md:leading-3 lg:text-xl text-[#FFFFFF]">
+            House in the wild · Wild Villas · The WILD HILL
+          </p>
+          <p class="iowan font-normal sm:text-sm md:text-4xl md:leading-[75px] lg:text-5xl lg:leading-[75px] text-[#FFFFFF]">
+            Maasai Mara
+          </p>
+          <p class="font-['Outfit'] font-normal sm:text-[8px] md:text-sm md:leading-5  lg:text-xl text-[#FFFFFF] sm:mb-3 md:mb-5">
+            Unveil the beauty of Maasai Mara, where wildlife thrives in astonishing landscapes and the untamed beauty of
+            the African wilderness unfolds before your eyes.
+          </p>
+          <img
+            src="images\Group 1003 (3).png"
+            alt=""
+            class="sm:max-h-[10px] sm:max-w-[100px] md:min-w-[142px] md:min-h-[43px] lg:min-h-[43px] sm:min-h-[25px]"
+          >
+        </div>
+      </div>
+
+      <!-- section-6 -->
+      <section class="section-6  bg-white flex flex-col md:flex-row mt-10">
+        <div class="image w-full md:w-1/2">
+          <img src="{{ section.settings.other-image| image_url }}" alt="" width="auto" height="auto">
+        </div>
+
+        <div class="desc md:text-2xl sm:text-xl lg:text-3xl text-[#B7916F] font-serif mx-auto text-center mt-10 md:m-auto px-5 md:w-1/2">
+          <div class="container mx-[8%] py-4 flex items-center w-[90%]">
+            <div class="flex-grow border-t border-[#CBBFB5]"></div>
+            <span class="flex-shrink-0 pl-2 text-[#CBBFB5] text-sm uppercase">Our collection</span>
+          </div>
+          <p class="para ">Embrace the thrill of adventure, with authentic and meaningful experiences</p>
+          <div class="desc text-xs text-[#4F5052]  mt-5">
+            <p>
+              From guided walks and photography safaris to wellness activities and helicopter trips, our experiences
+              offer a unique blend of adventure and authenticity across the Northern Mara Conservancies.
+            </p>
+          </div>
+          <div class="img mt-5 mb-5 sm:w-[50%] mx-auto">
+            <img src="images\Group 1003 (2).png" alt="">
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- section-7 -->
+    <section class="section7 p-5 bg-[#F8F4F0]">
+      <div class="headlines7 text-center mb-5">
+        <p class="font-['Outfit'] font-normal text-sm md:text-base leading-4 tracking-[1px] text-[#CBBFB5] mb-5">
+          CONSERVATION AND COMMUNITY
+        </p>
+        <p class="iowan font-normal text-lg md:text-3xl leading-[36px] md:leading-[46px] mb-5 text-[#B7916F]">
+          Creating brighter futures in the wild
+        </p>
+      </div>
+      <div class="images grid gap-5 sm:grid-cols-1 md:grid-cols-3">
+        <div class="relative m-auto w-full lg:w-[430px]">
+          <img src="{{ section.settings.training-image | image_url }}" alt="" width="auto">
+          <div class="content absolute bottom-0 p-5 text-white w-full bg-gradient-to-r from-black/45 to-black/0 bg-gradient-to-r from-black/45 to-black/0">
+            <p class="iowan font-normal text-xl md:text-2xl leading-10">Mara Training Center</p>
+            <p class="font-normal text-sm leading-5">
+              Lorem ipsum dolor sit amet consectetur. Faucibus sed ornare amet odio gravida.
+            </p>
+          </div>
+        </div>
+        <div class="relative m-auto w-full lg:w-[430px] ">
+          <img src="{{ section.settings.community-image | image_url }}" alt="" width="auto">
+          <div class="content absolute bottom-0 p-5 text-white w-full bg-gradient-to-r from-black/45 to-black/0">
+            <p class="iowan font-normal text-xl md:text-2xl leading-10">Community</p>
+            <p class="font-normal text-sm leading-5">
+              Lorem ipsum dolor sit amet consectetur. Faucibus sed ornare amet odio gravida.
+            </p>
+          </div>
+        </div>
+        <div class="relative m-auto w-full sm:w-full  lg:w-[430px] h-[470px]">
+          <img src="{{ section.settings.conversion-image | image_url }}" alt="" width="auto">
+          <div class="content absolute bottom-0 p-5 text-white w-full bg-gradient-to-r from-black/45 to-black/0">
+            <p class="iowan font-normal text-xl md:text-2xl leading-10">Conservation</p>
+            <p class="font-normal text-sm leading-5">
+              Lorem ipsum dolor sit amet consectetur. Faucibus sed ornare amet odio gravida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-8 -->
+
+    <div class="container bg-[#F8F4F0] p-2 mx-auto flex flex-col md:flex-row mt-10 sm:mt-0">
+      <div class="para text-[#B7916F] bg-[#F8F4F0] text-2xl md:text-3xl font-serif mx-auto md:w-1/2 md:m-auto  lg:mt-[15%] text-center md:text-justify p-5 sm:p-0">
+        <div class="para">
+          <p>Be a part of eco-tourism, in harmony with the land and its people</p>
+        </div>
+        <div class="para text-sm text-[#4F5052] font-sans mt-5 md:max-w-[445px] md:mx-0 mx-auto text-justify ">
+          <p>
+            Join us in the journey of eco-tourism, contributing to conservation and community well-being. Experience the
+            heart of Kenya while making a positive impact on the environment and its people.
+          </p>
+        </div>
+        <div class="img mt-5 sm:w-[50%] mx-auto">
+          <img src="images\Group 1003 (2).png" class="mx-auto" alt="">
+        </div>
+      </div>
+      <div class="card bg-white w-full md:w-1/2 h-auto p-5 mt-5 mx-auto">
+        <img src="{{ section.settings.people-image| image_url }}" alt="" width="auto" height="auto">
+        <div class="para text-[#4F5052] text-xs mt-5 max-w-[300px] mx-auto text-[Outfit] text-center">
+          <p>COMMUNITY BASED ACCOMMODATION</p>
+        </div>
+        <div class="para text-[#BD5B40] font-serif text-3xl md:text-4xl mx-auto text-center mt-5">
+          <h3>Wild Hub</h3>
+        </div>
+        <div class="para text-[#BD5B40] font-sans max-w-[300px] mx-auto mt-3 text-center text-xs">
+          <h4>Wild Bandas · Eco Camp</h4>
+        </div>
+        <div class="desc text-sm text-center mx-auto mt-5 text-[#4F5052] max-w-[360px] font-sans">
+          <p>
+            Explore the Wild Hub, a unique space connecting guests to the heart of conservation efforts and authentic
+            Maasai Mara experiences.
+          </p>
+        </div>
+        <div class="img sm:w-[50%] mx-auto mt-5">
+          <img src="images\Group 1004 (5).png" alt="" class="mx-auto">
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#CCA77F] p-10">
+      <div class="upper relative sm:mb-3 md:mb-[90px]">
+        <img src="images/Vector (8).png" class="relative mx-auto sm:max-w-[80vw] sm:min-h-[50vh] md:max-w-full" alt="">
+        <div class="absolute lg:bottom-[0%] sm:mt-10 inset-0 flex flex-col justify-center items-center text-center px-4 md:px-0 md:bottom-[30%] sm:bottom-[12%]">
+          <p class="iowan text-white sm:text-sm md:text-xl md:leading-8 sm:max-w-[90%] mx-auto mb-5">
+            “Can’t recommend this place enough. The location is incredible, the staff are wonderful and go out of their
+            way to make the experience so special. We saw so many animals, the guides are so friendly and knowledgeable.
+            Trip of a lifetime for sure!”
+          </p>
+          <p class="font-['Outfit'] text-white sm:text-xs md:text-sm md:leading-3 md:tracking-[1px]">Name Surname</p>
+        </div>
+      </div>
+
+      <div class="bottom relative md:py-10 flex sm:flex-col md:flex-row justify-around md:mb-5 text-center">
+        <div class="footerlogo">
+          <img
+            src="images\footerlogo-2.png"
+            class="absolute sm:left-1/2 transform -translate-x-1/2 sm:bottom-[11vh] max-w-[510px] max-h-[297px] md:bottom-[130px] md:left-[130px] w-full text-left pl-[10%] mx-[20%] sm:top-[20px] sm:left-[80px] "
+            alt=""
+          >
+        </div>
+        <div class="footer-sec-1 sm:mb-2 md:w-[20%]">
+          <p class="iowan font-normal text-lg leading-6 text-[#FFFFFF] mb-3">Our Collection</p>
+          <ul class="font-['Outfit'] sm:mb-2 md:mb-5 font-normal text-xs leading-4 tracking-[1px] text-[#FFFFFF]">
+            <li>HOUSE IN THE WILD</li>
+            <li>THE WILD HILL</li>
+            <li>WILD VILLAS</li>
+            <li>HOUSE ON THE BEACH</li>
+            <li>WILD HUB</li>
+          </ul>
+          <img src="images\Group 1004 (7).png" class="sm:max-w-[100px] md:max-w-[242px] sm:mx-auto" alt="">
+        </div>
+
+        <div class="footer-sec-2 sm:mb-2 md:w-[20%]">
+          <p class="iowan font-normal text-lg leading-6 text-[#FFFFFF] mb-3">DESTINATIONS</p>
+          <ul class="font-['Outfit'] font-normal text-xs leading-4 tracking-[1px] text-[#FFFFFF]">
+            <li>Experiences</li>
+            <li>Itineraries</li>
+          </ul>
+        </div>
+
+        <div class="footer-sec-3 sm:mb-2 md:w-[35%]">
+          <p class="iowan font-normal text-lg leading-6 text-[#FFFFFF] mb-3">Our Story</p>
+          <ul class="font-['Outfit'] font-normal text-xs leading-4 tracking-[1px] text-[#FFFFFF]">
+            <li>FUTURES IN THE WILD</li>
+            <li>OUR JOURNAL</li>
+            <li>OUR OFFERS</li>
+            <li>RATES</li>
+            <li>CAREERS</li>
+          </ul>
+        </div>
+
+        <div class="footer-sec-4 sm:mb-5 md:w-[25%]">
+          <p class="iowan font-normal text-lg leading-6 text-[#FFFFFF] mb-3"></p>
+          <ul class="font-['Outfit'] font-normal text-xs leading-4 tracking-[1px] text-[#FFFFFF]">
+            <li>GALLERY</li>
+            <li>FAQ'S</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+
+        <div class="footer-sec-5 md:w-[2%] md:ml-[2%]">
+          <img src="images\Vector 33.png" class="sm:hidden md:inline-block max-h-[338px]" alt="">
+        </div>
+
+        <div class="footer-sec-6 ">
+          <hr class="max-w-[95vw]" color="white">
+        </div>
+
+        <div class="footer-sec-7 max-w-[352px] sm:mb-5 sm:mx-auto md:mx-0 mt-8 md:w-[max-content] md:ml-[25px] md:mt-0">
+          <p class="iowan font-normal md:text-lg md:leading-6 text-[#FFFFFF] mb-3">
+            Sign up for the latest news, offers and blog posts from the collection
+          </p>
+          <div class="form">
+            <form action="" class="sm:mb-5 md:mb-10">
+              <div class="inputgroup flex space-x-2">
+                <input
+                  type="text"
+                  class="text-white appearance-none bg-transparent border-b-2 border-[#E2D1C3] w-full text-white py-1 px-2 placeholder-white leading-tight focus:outline-none focus:border-[#B7916F]"
+                  placeholder="Name"
+                  name=""
+                  id=""
+                >
+                <input
+                  type="text"
+                  class="appearance-none placeholder-white bg-transparent border-b-2 border-[#E2D1C3] w-full text-white py-1 px-2 leading-tight focus:outline-none focus:border-[#B7916F]"
+                  placeholder="Surname"
+                  name=""
+                  id=""
+                >
+              </div>
+              <br>
+              <input
+                type="text"
+                class="appearance-none placeholder-white bg-transparent border-b-2 border-[#E2D1C3] w-full text-white py-1 px-2 leading-tight focus:outline-none focus:border-[#B7916F]"
+                placeholder="Email"
+                name=""
+                id=""
+              >
+            </form>
+            <img src="images\Group 1003 (5).png" class="md:max-w-[192px] sm:max-w-[150px] mx-auto" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <p class="font-['Outfit'] font-medium text-sm leading-4 tracking-[1px] text-[#FFFFFF]">
+          ‭+254 700 095 501‬ | Bookings@collectioninthewild.com
+        </p>
+        <p class="font-['Outfit'] font-light text-xs leading-3 tracking-[1px] text-[#FFFFFF] mt-5">
+          All Rights reserved 2023 © Collection in the Wild | Privacy Policy | Terms & Conditions
+        </p>
+      </div>
+    </footer>
+    <div class="max-w-[118px] m-3 mx-auto flex gap-2">
+      <img src="images\instagram-logo.png" alt="">
+      <img src="images\linkedin-logo.png" alt="">
+      <img src="images\facebook-logo.png" alt="">
+      <img src="images\Group 14 (1).png" alt="">
+      <img src="images\Group 18.png" alt="">
+    </div>
+  </body>
+</html>

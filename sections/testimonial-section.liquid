@@ -1,0 +1,101 @@
+<!-- sections/testimonial-section.liquid -->
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+    {
+      "name": "Testimonial Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "For all skin types"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial",
+          "label": "Testimonial Text",
+          "default": "I couldn't be happier with the results"
+        },
+        {
+            "type": "number",
+            "id": "beforeDay",
+            "label": "beforeday"
+        },
+        {
+            "type": "number",
+            "id": "afterDay",
+            "label": "afterday"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Sandy, 57"
+        },
+        {
+          "type": "image_picker",
+          "id": "before_image",
+          "label": "Before Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "after_image",
+          "label": "After Image"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "content"
+        }
+        
+      ],
+      "blocks": [
+        {
+            "type": "text",
+            "name": "button",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "buttonText",
+                    "label": "Button Text",
+                }
+            ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Default",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <div class="testimonial-section">
+      <h2>{{ section.settings.heading }}</h2>
+      <div class="tabs">
+        {% for block in section.blocks %}
+        <button class="tab-button">{{ block.settings.buttonText }}</button>
+        {% endfor %}
+      </div>
+      <div class="testimonial-content">
+        <div class="images">
+          <div class="before">
+            <img src="{{ section.settings.before_image | img_url: '600x600' }}" alt="Before Image">
+            <p>BEFORE - DAY {{ section.settings.beforeDay }}</p>
+          </div>
+          <div class="after">
+            <img src="{{ section.settings.after_image | img_url: '600x600' }}" alt="After Image">
+            <p>AFTER - DAY {{ section.settings.afterDay }}</p>
+          </div>
+        </div>
+        <div class="text">
+          <h3>{{ section.settings.author }}</h3>
+          <p class="testimonialheading">"{{ section.settings.testimonial }}"</p>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-long">{{ section.settings.content }}</p>
+        </div>
+      </div>
+    </div>
+    

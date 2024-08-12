@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "testimonial-section",
+      "settings": {
+        "heading": "For all skin types",
+        "testimonial": "I couldn't be happier with the results",
+        "beforeDay": 1,
+        "afterDay": 14,
+        "author": "Sandy, 57",
+        "before_image": "shopify:\/\/shop_images\/acne1.jpg",
+        "after_image": "shopify:\/\/shop_images\/acne2.jpg",
+        "content": "“When I tried the Solawave I didn't know what to expect. Using it daily was\neasy though and it quickly became a simple addition to my skincare routine.\nOver the last 30 days, I've definitely seen a positive change in my skin tone\nand texture. I couldn't be happier with the results!”"
+      }
+    },
+    "himanshi_eJqk9D": {
+      "type": "himanshi",
+      "settings": {
+        "heading": "Welcome to our store",
+        "text": "This is a custom section.",
+        "image": "shopify:\/\/shop_images\/bluebackground.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "himanshi_eJqk9D"
+  ]
+}

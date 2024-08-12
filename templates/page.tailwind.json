@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "himanshi_3YPkrU": {
+      "type": "himanshi",
+      "settings": {
+        "heading": "Welcome to our store(CLI)",
+        "text": "This is a custom section (CLI).",
+        "image": "shopify:\/\/shop_images\/3svg.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "himanshi_3YPkrU"
+  ]
+}
